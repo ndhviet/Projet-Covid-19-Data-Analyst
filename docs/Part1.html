@@ -78,7 +78,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-86fbd99215607a29b2a977ca276203cb.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-b12dc6dc0901834be11ffb69139b1a96.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -159,7 +159,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span class="menu-text"></span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="https://ndhviet.wixsite.com/hviet-portfolio"> 
+    <a class="nav-link" href="https://hoangviet1810.github.io/"> 
 <span class="menu-text">Portfolio de Viet</span></a>
   </li>  
   <li class="nav-item compact">
@@ -253,7 +253,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <h1 data-number="1"><span class="header-section-number">1</span> Base de données COVID-19</h1>
 <section id="importation-des-bibliothèques-des-covid-19" class="level2" data-number="1.1">
 <h2 data-number="1.1" class="anchored" data-anchor-id="importation-des-bibliothèques-des-covid-19"><span class="header-section-number">1.1</span> Importation des bibliothèques des COVID-19</h2>
-<div id="63604ccb" class="cell" data-execution_count="1">
+<div id="b030b91a" class="cell" data-execution_count="1">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> seaborn <span class="im">as</span> sns</span>
@@ -267,7 +267,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </section>
 <section id="importation-des-données" class="level2" data-number="1.2">
 <h2 data-number="1.2" class="anchored" data-anchor-id="importation-des-données"><span class="header-section-number">1.2</span> Importation des données</h2>
-<div id="3ae7b18b" class="cell" data-execution_count="2">
+<div id="f485a7d7" class="cell" data-execution_count="2">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> os</span>
 <span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> dirname, _, filenames <span class="kw">in</span> os.walk(<span class="st">'Covid-19_from_John_Hopkins_University'</span>):</span>
@@ -286,7 +286,7 @@ Covid-19_from_John_Hopkins_University/RAW_us_deaths.csv
 Covid-19_from_John_Hopkins_University/RAW_us_confirmed_cases.csv</code></pre>
 </div>
 </div>
-<div id="ee999ace" class="cell" data-execution_count="3">
+<div id="76fd084d" class="cell" data-execution_count="3">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>corona_dataset <span class="op">=</span> pd.read_csv(<span class="st">"Covid-19_from_John_Hopkins_University/RAW_global_confirmed_cases.csv"</span>)</span>
 <span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>corona_dataset.head()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display" data-execution_count="3">
@@ -451,7 +451,7 @@ Covid-19_from_John_Hopkins_University/RAW_us_confirmed_cases.csv</code></pre>
 </section>
 <section id="vérification-initiale" class="level2" data-number="1.3">
 <h2 data-number="1.3" class="anchored" data-anchor-id="vérification-initiale"><span class="header-section-number">1.3</span> Vérification initiale</h2>
-<div id="33bc61d5" class="cell" data-execution_count="4">
+<div id="e5a5004f" class="cell" data-execution_count="4">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>corona_dataset.shape</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display" data-execution_count="4">
 <pre><code>(289, 1147)</code></pre>
@@ -463,13 +463,13 @@ Covid-19_from_John_Hopkins_University/RAW_us_confirmed_cases.csv</code></pre>
 <h2 data-number="1.4" class="anchored" data-anchor-id="nettoyage-des-données"><span class="header-section-number">1.4</span> Nettoyage des données</h2>
 <section id="suppression-des-colonnes-inutiles" class="level3" data-number="1.4.1">
 <h3 data-number="1.4.1" class="anchored" data-anchor-id="suppression-des-colonnes-inutiles"><span class="header-section-number">1.4.1</span> Suppression des colonnes inutiles</h3>
-<div id="0870e186" class="cell" data-execution_count="5">
+<div id="cc79a642" class="cell" data-execution_count="5">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>corona_dataset_clean <span class="op">=</span> corona_dataset.drop([<span class="st">"Lat"</span>, <span class="st">"Long"</span>], axis<span class="op">=</span><span class="dv">1</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 </section>
 <section id="agrégation-par-pays" class="level3" data-number="1.4.2">
 <h3 data-number="1.4.2" class="anchored" data-anchor-id="agrégation-par-pays"><span class="header-section-number">1.4.2</span> Agrégation par pays</h3>
-<div id="43248433" class="cell" data-execution_count="6">
+<div id="099fb2b8" class="cell" data-execution_count="6">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb9"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>corona_dataset_aggregated <span class="op">=</span> corona_dataset_clean.groupby(<span class="st">'Country/Region'</span>).<span class="bu">sum</span>()</span>
 <span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a><span class="co"># Exportation des données agrégées par pays</span></span>
 <span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>corona_dataset_aggregated.to_csv(<span class="st">"data/corona_dataset_aggregated.csv"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
@@ -477,7 +477,7 @@ Covid-19_from_John_Hopkins_University/RAW_us_confirmed_cases.csv</code></pre>
 </section>
 <section id="vérification-après-agrégation" class="level3" data-number="1.4.3">
 <h3 data-number="1.4.3" class="anchored" data-anchor-id="vérification-après-agrégation"><span class="header-section-number">1.4.3</span> Vérification après agrégation</h3>
-<div id="d486204c" class="cell" data-execution_count="7">
+<div id="3e5486c4" class="cell" data-execution_count="7">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb10"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a>corona_dataset_aggregated.shape</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display" data-execution_count="7">
 <pre><code>(201, 1144)</code></pre>
@@ -486,7 +486,7 @@ Covid-19_from_John_Hopkins_University/RAW_us_confirmed_cases.csv</code></pre>
 </section>
 <section id="aperçu-des-données" class="level3" data-number="1.4.4">
 <h3 data-number="1.4.4" class="anchored" data-anchor-id="aperçu-des-données"><span class="header-section-number">1.4.4</span> Aperçu des données</h3>
-<div id="ed535a77" class="cell" data-execution_count="8">
+<div id="b2dd7b90" class="cell" data-execution_count="8">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb12"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a>corona_dataset_aggregated.head()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display" data-execution_count="8">
 <div>
@@ -675,7 +675,7 @@ Covid-19_from_John_Hopkins_University/RAW_us_confirmed_cases.csv</code></pre>
 </section>
 <section id="vérification-des-données-manquantes" class="level2" data-number="1.5">
 <h2 data-number="1.5" class="anchored" data-anchor-id="vérification-des-données-manquantes"><span class="header-section-number">1.5</span> Vérification des données manquantes</h2>
-<div id="4a9e9ef5" class="cell" data-execution_count="9">
+<div id="a897c693" class="cell" data-execution_count="9">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb13"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a>corona_dataset_aggregated.isnull().<span class="bu">sum</span>().<span class="bu">sum</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display" data-execution_count="9">
 <pre><code>np.int64(0)</code></pre>
@@ -686,7 +686,7 @@ Covid-19_from_John_Hopkins_University/RAW_us_confirmed_cases.csv</code></pre>
 </section>
 <section id="vérification-des-doublons" class="level2" data-number="1.6">
 <h2 data-number="1.6" class="anchored" data-anchor-id="vérification-des-doublons"><span class="header-section-number">1.6</span> Vérification des doublons</h2>
-<div id="22f8ed15" class="cell" data-execution_count="10">
+<div id="ec640942" class="cell" data-execution_count="10">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb15"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a>corona_dataset_aggregated.duplicated().<span class="bu">sum</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display" data-execution_count="10">
 <pre><code>np.int64(0)</code></pre>
@@ -696,7 +696,7 @@ Covid-19_from_John_Hopkins_University/RAW_us_confirmed_cases.csv</code></pre>
 </section>
 <section id="transformation-en-série-temporelle" class="level2" data-number="1.7">
 <h2 data-number="1.7" class="anchored" data-anchor-id="transformation-en-série-temporelle"><span class="header-section-number">1.7</span> Transformation en série temporelle</h2>
-<div id="8265c325" class="cell" data-execution_count="11">
+<div id="9a611ef5" class="cell" data-execution_count="11">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb17"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a>covid_clean <span class="op">=</span> corona_dataset_aggregated.copy() <span class="co"># Création d'une copie du DataFrame pour éviter de modifier l'original</span></span>
 <span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb17-3"><a href="#cb17-3" aria-hidden="true" tabindex="-1"></a>covid_clean <span class="op">=</span> covid_clean.drop(columns<span class="op">=</span>[<span class="st">"Lat"</span>, <span class="st">"Long"</span>], errors<span class="op">=</span><span class="st">"ignore"</span>) <span class="co"># Suppression des colonnes "Lat" et "Long" si elles existent, sinon ignorer l'erreur</span></span>
@@ -867,7 +867,7 @@ Covid-19_from_John_Hopkins_University/RAW_us_confirmed_cases.csv</code></pre>
 </div>
 </div>
 </div>
-<div id="01f1fb81" class="cell" data-execution_count="12">
+<div id="bd8ed5a3" class="cell" data-execution_count="12">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb18"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a>covid_ts.to_csv(<span class="st">"data/covid_timeseries.csv"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 <p>Le jeu de données a ensuite été exporté au format CSV afin de faciliter sa réutilisation dans les étapes ultérieures de l’analyse exploratoire des données (EDA) et de garantir la reproductibilité du projet.</p>
@@ -877,7 +877,7 @@ Covid-19_from_John_Hopkins_University/RAW_us_confirmed_cases.csv</code></pre>
 <h1 data-number="2"><span class="header-section-number">2</span> Base de données World Happiness Report 2021</h1>
 <section id="importation-des-données-1" class="level2" data-number="2.1">
 <h2 data-number="2.1" class="anchored" data-anchor-id="importation-des-données-1"><span class="header-section-number">2.1</span> Importation des données</h2>
-<div id="fcb13475" class="cell" data-execution_count="13">
+<div id="284ebcda" class="cell" data-execution_count="13">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb19"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a>happiness_report <span class="op">=</span> pd.read_csv(<span class="st">"World_Happiness_Report/world-happiness-report-2021.csv"</span>)</span>
 <span id="cb19-2"><a href="#cb19-2" aria-hidden="true" tabindex="-1"></a>happiness_report.head()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display" data-execution_count="13">
@@ -1035,7 +1035,7 @@ Covid-19_from_John_Hopkins_University/RAW_us_confirmed_cases.csv</code></pre>
 </section>
 <section id="vérification-structure" class="level2" data-number="2.2">
 <h2 data-number="2.2" class="anchored" data-anchor-id="vérification-structure"><span class="header-section-number">2.2</span> Vérification structure</h2>
-<div id="9f9f60e1" class="cell" data-execution_count="14">
+<div id="17ea1cf9" class="cell" data-execution_count="14">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb20"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a>happiness_report.shape</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display" data-execution_count="14">
 <pre><code>(149, 20)</code></pre>
@@ -1046,13 +1046,13 @@ Covid-19_from_John_Hopkins_University/RAW_us_confirmed_cases.csv</code></pre>
 <h2 data-number="2.3" class="anchored" data-anchor-id="nettoyage-des-données-1"><span class="header-section-number">2.3</span> Nettoyage des données</h2>
 <section id="suppression-des-colonnes-inutiles-1" class="level3" data-number="2.3.1">
 <h3 data-number="2.3.1" class="anchored" data-anchor-id="suppression-des-colonnes-inutiles-1"><span class="header-section-number">2.3.1</span> Suppression des colonnes inutiles</h3>
-<div id="4783d15b" class="cell" data-execution_count="15">
+<div id="6520b529" class="cell" data-execution_count="15">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb22"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a>happiness_report_clean <span class="op">=</span> happiness_report.drop([<span class="st">"Standard error of ladder score"</span>, <span class="st">"upperwhisker"</span>, <span class="st">"lowerwhisker"</span>],axis<span class="op">=</span><span class="dv">1</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 </section>
 <section id="vérification-après-nettoyage" class="level3" data-number="2.3.2">
 <h3 data-number="2.3.2" class="anchored" data-anchor-id="vérification-après-nettoyage"><span class="header-section-number">2.3.2</span> Vérification après nettoyage</h3>
-<div id="3b972c54" class="cell" data-execution_count="16">
+<div id="0b42cb53" class="cell" data-execution_count="16">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb23"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a>happiness_report.shape</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display" data-execution_count="16">
 <pre><code>(149, 20)</code></pre>
@@ -1062,7 +1062,7 @@ Covid-19_from_John_Hopkins_University/RAW_us_confirmed_cases.csv</code></pre>
 </section>
 <section id="vérification-des-données-manquantes-1" class="level2" data-number="2.4">
 <h2 data-number="2.4" class="anchored" data-anchor-id="vérification-des-données-manquantes-1"><span class="header-section-number">2.4</span> Vérification des données manquantes</h2>
-<div id="94a8aaec" class="cell" data-execution_count="17">
+<div id="42abb528" class="cell" data-execution_count="17">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb25"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb25-1"><a href="#cb25-1" aria-hidden="true" tabindex="-1"></a>happiness_report_clean.isnull().<span class="bu">sum</span>().<span class="bu">sum</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display" data-execution_count="17">
 <pre><code>np.int64(0)</code></pre>
@@ -1071,7 +1071,7 @@ Covid-19_from_John_Hopkins_University/RAW_us_confirmed_cases.csv</code></pre>
 </section>
 <section id="vérification-des-doublons-1" class="level2" data-number="2.5">
 <h2 data-number="2.5" class="anchored" data-anchor-id="vérification-des-doublons-1"><span class="header-section-number">2.5</span> Vérification des doublons</h2>
-<div id="26e47991" class="cell" data-execution_count="18">
+<div id="5602aac1" class="cell" data-execution_count="18">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb27"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb27-1"><a href="#cb27-1" aria-hidden="true" tabindex="-1"></a>happiness_report_clean.duplicated().<span class="bu">sum</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display" data-execution_count="18">
 <pre><code>np.int64(0)</code></pre>
@@ -1080,7 +1080,7 @@ Covid-19_from_John_Hopkins_University/RAW_us_confirmed_cases.csv</code></pre>
 </section>
 <section id="aperçu-final" class="level2" data-number="2.6">
 <h2 data-number="2.6" class="anchored" data-anchor-id="aperçu-final"><span class="header-section-number">2.6</span> Aperçu final</h2>
-<div id="8ed868c8" class="cell" data-execution_count="19">
+<div id="e27dfc00" class="cell" data-execution_count="19">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb29"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb29-1"><a href="#cb29-1" aria-hidden="true" tabindex="-1"></a>happiness_report_clean.head()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display" data-execution_count="19">
 <div>
@@ -1222,7 +1222,7 @@ Covid-19_from_John_Hopkins_University/RAW_us_confirmed_cases.csv</code></pre>
 <h1 data-number="3"><span class="header-section-number">3</span> Préparation pour analyse croisée (COVID vs Happiness)</h1>
 <section id="vérification-mismatch-country-names" class="level2" data-number="3.1">
 <h2 data-number="3.1" class="anchored" data-anchor-id="vérification-mismatch-country-names"><span class="header-section-number">3.1</span> Vérification mismatch country names</h2>
-<div id="c032a95d" class="cell" data-execution_count="20">
+<div id="4a619160" class="cell" data-execution_count="20">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb30"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb30-1"><a href="#cb30-1" aria-hidden="true" tabindex="-1"></a><span class="bu">set</span>(happiness_report_clean[<span class="st">"Country name"</span>]) <span class="op">-</span> <span class="bu">set</span>(corona_dataset_aggregated.index)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display" data-execution_count="20">
 <pre><code>{'Czech Republic',
@@ -1238,7 +1238,7 @@ Covid-19_from_John_Hopkins_University/RAW_us_confirmed_cases.csv</code></pre>
  'United States'}</code></pre>
 </div>
 </div>
-<div id="25dc4a3f" class="cell" data-execution_count="21">
+<div id="1690ce6c" class="cell" data-execution_count="21">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb32"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb32-1"><a href="#cb32-1" aria-hidden="true" tabindex="-1"></a>happiness_report_clean.shape</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display" data-execution_count="21">
 <pre><code>(149, 17)</code></pre>
@@ -1247,7 +1247,7 @@ Covid-19_from_John_Hopkins_University/RAW_us_confirmed_cases.csv</code></pre>
 </section>
 <section id="harmonisation-des-noms-de-pays" class="level2" data-number="3.2">
 <h2 data-number="3.2" class="anchored" data-anchor-id="harmonisation-des-noms-de-pays"><span class="header-section-number">3.2</span> Harmonisation des noms de pays</h2>
-<div id="aedefed4" class="cell" data-execution_count="22">
+<div id="27cc6189" class="cell" data-execution_count="22">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb34"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb34-1"><a href="#cb34-1" aria-hidden="true" tabindex="-1"></a>merged_data <span class="op">=</span> happiness_report_clean.merge(</span>
 <span id="cb34-2"><a href="#cb34-2" aria-hidden="true" tabindex="-1"></a>    corona_dataset_aggregated,</span>
 <span id="cb34-3"><a href="#cb34-3" aria-hidden="true" tabindex="-1"></a>    left_on<span class="op">=</span><span class="st">"Country name"</span>,</span>
@@ -1415,7 +1415,7 @@ Covid-19_from_John_Hopkins_University/RAW_us_confirmed_cases.csv</code></pre>
 </div>
 </div>
 </div>
-<div id="54d8422a" class="cell" data-execution_count="23">
+<div id="995bd647" class="cell" data-execution_count="23">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb35"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb35-1"><a href="#cb35-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"Nombre de pays dans Happiness Report :"</span>, <span class="bu">len</span>(happiness_report_clean))</span>
 <span id="cb35-2"><a href="#cb35-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"Nombre de pays après fusion :"</span>, <span class="bu">len</span>(merged_data))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
@@ -1426,7 +1426,7 @@ Nombre de pays après fusion : 138</code></pre>
 </section>
 <section id="vérification-des-incohérences-entre-les-noms-de-pays" class="level2" data-number="3.3">
 <h2 data-number="3.3" class="anchored" data-anchor-id="vérification-des-incohérences-entre-les-noms-de-pays"><span class="header-section-number">3.3</span> Vérification des incohérences entre les noms de pays</h2>
-<div id="10b1efd2" class="cell" data-execution_count="24">
+<div id="6a446524" class="cell" data-execution_count="24">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb37"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb37-1"><a href="#cb37-1" aria-hidden="true" tabindex="-1"></a>happiness_report_clean[<span class="st">"Country name"</span>] <span class="op">=</span> happiness_report_clean[<span class="st">"Country name"</span>].replace({</span>
 <span id="cb37-2"><a href="#cb37-2" aria-hidden="true" tabindex="-1"></a>    <span class="st">"United States"</span>: <span class="st">"US"</span>,</span>
 <span id="cb37-3"><a href="#cb37-3" aria-hidden="true" tabindex="-1"></a>    <span class="st">"South Korea"</span>: <span class="st">"Korea, South"</span>,</span>
@@ -1610,7 +1610,7 @@ Nombre de pays après fusion : 138</code></pre>
 </div>
 </div>
 </div>
-<div id="a617a498" class="cell" data-execution_count="25">
+<div id="e522ec06" class="cell" data-execution_count="25">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb38"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb38-1"><a href="#cb38-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"Nombre de pays dans Happiness Report :"</span>, <span class="bu">len</span>(happiness_report_clean))</span>
 <span id="cb38-2"><a href="#cb38-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"Nombre de pays après fusion :"</span>, <span class="bu">len</span>(merged_data))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
@@ -1618,17 +1618,17 @@ Nombre de pays après fusion : 138</code></pre>
 Nombre de pays après fusion : 145</code></pre>
 </div>
 </div>
-<div id="63355d9d" class="cell" data-execution_count="26">
+<div id="76704053" class="cell" data-execution_count="26">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb40"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb40-1"><a href="#cb40-1" aria-hidden="true" tabindex="-1"></a>remaining_mismatch <span class="op">=</span> <span class="bu">set</span>(happiness_report_clean[<span class="st">"Country name"</span>]) <span class="op">-</span> <span class="bu">set</span>(corona_dataset_aggregated.index)</span>
 <span id="cb40-2"><a href="#cb40-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb40-3"><a href="#cb40-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"Nombre de pays non correspondants :"</span>, <span class="bu">len</span>(remaining_mismatch))</span>
 <span id="cb40-4"><a href="#cb40-4" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(remaining_mismatch)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>Nombre de pays non correspondants : 4
-{'Taiwan Province of China', 'North Cyprus', 'Turkmenistan', 'Hong Kong S.A.R. of China'}</code></pre>
+{'Turkmenistan', 'Taiwan Province of China', 'North Cyprus', 'Hong Kong S.A.R. of China'}</code></pre>
 </div>
 </div>
-<div id="6991decf" class="cell" data-execution_count="27">
+<div id="e12b2d65" class="cell" data-execution_count="27">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb42"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb42-1"><a href="#cb42-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="bu">sorted</span>(remaining_mismatch))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>['Hong Kong S.A.R. of China', 'North Cyprus', 'Taiwan Province of China', 'Turkmenistan']</code></pre>
@@ -1641,6 +1641,30 @@ Nombre de pays après fusion : 145</code></pre>
 </section>
 
 </main> <!-- /main -->
+<div id="preloader">
+    <div class="loader-content">
+        <div class="loader-center-group">
+            <div class="spinner"></div> 
+
+            <div class="loader-letter-container">
+                <span class="loader-letter">V</span>
+            </div>
+        </div>
+        
+        <h2 class="loader-text">MADE BY NGUYEN DUC HOANG VIET</h2>
+        <p class="loader-subtext"> PROJET COVID-19 DATA ANALYST</p>
+    </div>
+</div>
+
+<script>
+    // Giữ nguyên đoạn script
+    window.addEventListener('load', function () {
+        const preloader = document.getElementById('preloader');
+        setTimeout(function() {
+            preloader.classList.add('fade-out');
+        }, 1200); 
+    });
+</script>
 <div style="text-align:center; font-size:0.85em; color:#888; padding:25px;">
   <strong>© 2026 NGUYEN Duc Hoang Viet — Tous droits réservés.</strong><br>
   <strong> Projet COVID-19 Data Analyst using Python</strong><br>
