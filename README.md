@@ -5,7 +5,7 @@
 <a href="#"><img src="https://img.shields.io/badge/Data-Analysis-orange?style=flat-square"></a>
 <a href="#"><img src="https://img.shields.io/badge/COVID--19-World%20Happiness-blueviolet?style=flat-square"></a>
 <a href="#"><img src="https://img.shields.io/badge/Status-Completed-brightgreen?style=flat-square"></a>
-<a href="https://hoangviet1810.github.io/covid/">
+<a href="https://ndhviet.github.io/covid/">
   <img src="https://img.shields.io/badge/Demo-Live_Website-red?style=flat-square">
 </a>
 <a href="#"><img src="https://img.shields.io/badge/License-MIT-blue?style=flat-square"></a>
@@ -77,13 +77,13 @@ On résume les principaux résultats obtenus, discute de leurs limites et propos
 
 ## 🚀 Démo
  
-👉 [Voir le site en ligne](https://hoangviet1810.github.io/covid/)
+👉 [Voir le site en ligne](https://ndhviet.github.io/covid/)
  
 ---
 
 **Consulter le dashboard**
 
-[![Dashboard du projet](images/dashboard_covid.png)](https://hoangviet1810.github.io/Projet-Covid-19-Data-Analyst/images/dashboard_covid_happiness.html)
+[![Dashboard du projet](images/dashboard_covid.png)](https://ndhviet.github.io/Projet-Covid-19-Data-Analyst/images/dashboard_covid_happiness.html)
 
 ➡️ Cliquez sur l'image pour ouvrir le dashboard interactif.
 

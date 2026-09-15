@@ -23,9 +23,9 @@ website:
         
     right:
       - icon: github
-        href: https://github.com/Hoangviet1810/Projet-Covid-19-Data-Analyst
+        href: https://github.com/ndhviet/Projet-Covid-19-Data-Analyst
       - text: "Portfolio de Viet"
-        href: https://hoangviet1810.github.io/
+        href: https://ndhviet.github.io/
         aria-label: "Portfolio"
       - icon: linkedin           
         href: https://www.linkedin.com/in/hoang-viet1810/?isSelfProfile=false
