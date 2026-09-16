@@ -155,53 +155,6 @@
     border-top:1.5px solid var(--border);
     margin-top:14px;
   }
-
-  /* ══════════════════════════════════
-     RESPONSIVE — Tablet (≤ 1024px)
-  ══════════════════════════════════ */
-  @media (max-width: 1024px) {
-    body { padding: 16px; }
-    header { flex-direction: column; gap: 12px; }
-    header > div:last-child { text-align: left; }
-    header > div:last-child > div { justify-content: flex-start !important; }
-
-    .grid {
-      grid-template-columns: repeat(2, 1fr);
-      gap: 12px;
-    }
-  }
-
-  /* ══════════════════════════════════
-     RESPONSIVE — Mobile (≤ 640px)
-  ══════════════════════════════════ */
-  @media (max-width: 640px) {
-    body { padding: 12px; }
-    header h1 { font-size: 1rem; }
-    header p  { font-size: .58rem; }
-
-    .grid {
-      grid-template-columns: 1fr;
-      gap: 10px;
-    }
-    /* toàn bộ card xếp chồng, kể cả những card đang grid-column:span 2 */
-    .card { grid-column: 1 / -1 !important; }
-
-    .kpi-val { font-size: 1.7rem; }
-    .card { padding: 14px; }
-    .card-title { font-size: .8rem; margin-bottom: 9px; }
-    .card-label { font-size: .54rem; }
-
-    table { font-size: .56rem; }
-    th, td { padding: 3px 4px; }
-
-    .footer-bar {
-      flex-direction: column;
-      gap: 8px;
-      align-items: flex-start;
-      text-align: left;
-    }
-    .footer-bar a { font-size: 8px; white-space: normal; word-break: break-all; }
-  }
 </style>
 </head>
 <body>
