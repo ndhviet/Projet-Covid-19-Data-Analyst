@@ -90,16 +90,6 @@ streamlit run app.py   # lancer le dashboard Streamlit
 
 ➡️ Cliquez sur l'image pour ouvrir le dashboard interactif.
 
-
-## 🔍 Indicateurs analysés
-
-- **GDP per capita** — Richesse économique par habitant
-- **Social support** — Réseau de soutien social perçu
-- **Life expectancy** — Espérance de vie en bonne santé
-- **Freedom** — Liberté de faire des choix de vie
-- **Generosity** — Générosité
-- **Corruption perception** — Perception de la corruption
-
 ---
 
 
