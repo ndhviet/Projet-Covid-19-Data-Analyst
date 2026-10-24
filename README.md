@@ -71,20 +71,13 @@ streamlit run app.py   # lancer le dashboard Streamlit
 
 ---
 
-## 📊 Dashboard
-
-[![Dashboard du projet](images/dashboard_covid.png)](https://ndhviet.github.io/Projet-Covid-19-Data-Analyst/images/dashboard_covid_happiness.html)
-
-➡️ Cliquez sur l'image pour ouvrir le dashboard interactif.
-
-
 ## 🚀 Démo
  
 👉 [Voir le site en ligne](https://ndhviet.github.io/covid/)
  
 ---
 
-**Consulter le dashboard**
+## 📊 Dashboard
 
 [![Dashboard du projet](images/dashboard_covid.png)](https://ndhviet.github.io/Projet-Covid-19-Data-Analyst/images/dashboard_covid_happiness.html)
 
