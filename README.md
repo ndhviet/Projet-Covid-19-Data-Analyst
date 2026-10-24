@@ -71,7 +71,7 @@ streamlit run app.py   # lancer le dashboard Streamlit
 
 ---
 
-## 🚀 Démo
+##  Démo
  
 👉 [Voir le site en ligne](https://ndhviet.github.io/covid/)
  
