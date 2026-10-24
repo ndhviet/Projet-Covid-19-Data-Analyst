@@ -85,20 +85,7 @@ On résume les principaux résultats obtenus, discute de leurs limites et propos
 
 [![Dashboard du projet](images/dashboard_covid.png)](https://ndhviet.github.io/Projet-Covid-19-Data-Analyst/images/dashboard_covid_happiness.html)
 
-<div align="center">
-  <h1>COVID-19 & Bonheur</h1>
-  <p><em>Analyse de données — Impact du COVID-19 sur le bonheur mondial</em></p>
-
-  <a href="#"><img src="https://img.shields.io/badge/Python-3.x-3776AB?logo=python&logoColor=white&style=flat-square"></a>
-  <a href="#"><img src="https://img.shields.io/badge/License-MIT-blue?style=flat-square"></a>
-  <a href="https://github.com/ndhviet/Projet-Covid-19-Data-Analyst">
-    <img src="https://img.shields.io/badge/GitHub-Repository-black?logo=github&style=flat-square">
-  </a>
-  <a href="https://ndhviet.github.io/covid/">
-    <img src="https://img.shields.io/badge/Demo-Live_Website-red?style=flat-square">
-  </a>
-</div>
-<br>
+➡️ Cliquez sur l'image pour ouvrir le dashboard interactif.
 
 ## 📌 Présentation du projet
 
@@ -162,8 +149,6 @@ streamlit run app.py   # lancer le dashboard Streamlit
 ## 📊 Dashboard
 
 [![Dashboard du projet](images/dashboard_covid.png)](https://ndhviet.github.io/Projet-Covid-19-Data-Analyst/images/dashboard_covid_happiness.html)
-
-➡️ Cliquez sur l'image pour ouvrir le dashboard interactif.
 
 ➡️ Cliquez sur l'image pour ouvrir le dashboard interactif.
 
