@@ -36,17 +36,48 @@ Ce projet analyse le nombre cumulé de cas confirmés de COVID-19 par pays et le
 - **Generosity** — Générosité
 - **Corruption perception** — Perception de la corruption
 
+## 🗂️ Organisation du projet
 
-# Organisation des codes
+1. **Partie 1 — Préparation et nettoyage :** importation, valeurs manquantes, agrégation par pays et fusion des sources
+2. **Partie 2 — Analyse exploratoire (EDA) :** statistiques descriptives et visualisations de l'évolution de la pandémie
+3. **Partie 3 — Corrélations et régressions :** lien entre le taux maximal d'infection et les indicateurs du World Happiness Report
+4. **Partie 4 — Conclusion :** résultats, limites et pistes d'amélioration
 
-Le projet est divisé en plusieurs parties :
+---
 
+## 📈 Résultats clés
+
+- Le PIB par habitant est fortement corrélé au bonheur.
+- Le soutien social améliore significativement le bien-être.
+- Les cas de COVID-19 sont plus élevés dans les pays développés.
+- Les modèles de régression ont une performance limitée pour expliquer le bonheur.
+
+---
+
+## 🚀 Lancer le projet
+
+```sh
+git clone https://github.com/ndhviet/Projet-Covid-19-Data-Analyst.git
+cd Projet-Covid-19-Data-Analyst
+python3 -m venv .venv
+source .venv/bin/activate
+pip install -r requirements.txt
 ```
-├── Part1  — Préparation et nettoyage des données
-├── Part2  — Analyse exploratoire (EDA)
-├── Part3  — Corrélations et régressions
-└── Part4  — Conclusion
+
+```sh
+quarto render          # générer le site web
+streamlit run app.py   # lancer le dashboard Streamlit
 ```
+
+---
+
+## 📊 Dashboard
+
+[![Dashboard du projet](images/dashboard_covid.png)](https://ndhviet.github.io/Projet-Covid-19-Data-Analyst/images/dashboard_covid_happiness.html)
+
+➡️ Cliquez sur l'image pour ouvrir le dashboard interactif.
+
+
 
 ## Partie 1 : Préparation et nettoyage des données
 
@@ -105,44 +136,4 @@ Ce projet analyse le nombre cumulé de cas confirmés de COVID-19 par pays et le
 
 ---
 
-## 🗂️ Organisation du projet
-
-1. **Partie 1 — Préparation et nettoyage :** importation, valeurs manquantes, agrégation par pays et fusion des sources
-2. **Partie 2 — Analyse exploratoire (EDA) :** statistiques descriptives et visualisations de l'évolution de la pandémie
-3. **Partie 3 — Corrélations et régressions :** lien entre le taux maximal d'infection et les indicateurs du World Happiness Report
-4. **Partie 4 — Conclusion :** résultats, limites et pistes d'amélioration
-
----
-
-## 📈 Résultats clés
-
-- Le PIB par habitant est fortement corrélé au bonheur.
-- Le soutien social améliore significativement le bien-être.
-- Les cas de COVID-19 sont plus élevés dans les pays développés.
-- Les modèles de régression ont une performance limitée pour expliquer le bonheur.
-
----
-
-## 🚀 Lancer le projet
-
-```sh
-git clone https://github.com/ndhviet/Projet-Covid-19-Data-Analyst.git
-cd Projet-Covid-19-Data-Analyst
-python3 -m venv .venv
-source .venv/bin/activate
-pip install -r requirements.txt
-```
-
-```sh
-quarto render          # générer le site web
-streamlit run app.py   # lancer le dashboard Streamlit
-```
-
----
-
-## 📊 Dashboard
-
-[![Dashboard du projet](images/dashboard_covid.png)](https://ndhviet.github.io/Projet-Covid-19-Data-Analyst/images/dashboard_covid_happiness.html)
-
-➡️ Cliquez sur l'image pour ouvrir le dashboard interactif.
 
