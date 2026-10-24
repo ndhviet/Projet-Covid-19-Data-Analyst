@@ -18,3 +18,7 @@ __pycache__/
 
 # macOS
 .DS_Store
+
+/_*.local
+
+_environment.local

@@ -5,3 +5,5 @@ matplotlib==3.11.2
 jupyter==1.1.1
 pyyaml==6.0.3
 scikit-learn
+jupyter
+ipykernel
