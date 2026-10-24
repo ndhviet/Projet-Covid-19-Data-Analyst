@@ -14,23 +14,17 @@
 
 # Projet-Covid-19-Data-Analyst
 
-# Présentation du projet
+## 📌 Présentation du projet
 
-Dans ce projet, on analyse les données de la COVID-19 concernant le nombre cumulé de cas confirmés par pays. On les combine avec des données sur différents indicateurs de qualité de vie afin d'étudier l'existence d'un lien entre la propagation du virus et le niveau de bonheur des populations.
+Ce projet analyse le nombre cumulé de cas confirmés de COVID-19 par pays et le combine avec des indicateurs de qualité de vie, afin d'étudier l'existence d'un lien entre la propagation du virus et le niveau de bonheur des populations.
 
-Pour cela, on utilise l'ensemble de données COVID-19 publié par l'université Johns Hopkins ainsi que l'ensemble de données World Happiness Report 2021. Ces données sont disponibles sur Kaggle aux adresses suivantes :
+| Source | Données utilisées | Lien |
+|--------|-------------------|------|
+| Johns Hopkins University | Cas confirmés cumulés de COVID-19 par pays | [Kaggle](https://www.kaggle.com/datasets/antgoldbloom/covid19-data-from-john-hopkins-university) |
+| World Happiness Report 2021 (Gallup / ONU) | Score de bonheur et indicateurs associés | [Kaggle](https://www.kaggle.com/datasets/ajaypalsinghlo/world-happiness-report-2021) |
 
-- <https://www.kaggle.com/datasets/antgoldbloom/covid19-data-from-john-hopkins-university>
-- <https://www.kaggle.com/datasets/ajaypalsinghlo/world-happiness-report-2021>
+**Outils :** Python (Pandas, NumPy, Matplotlib, Seaborn, scikit-learn), Quarto, Streamlit.
 
-## 📊 Données utilisées
- 
-| Source | Description |
-|--------|-------------|
-| Johns Hopkins University | Données COVID-19 (cas, décès, guérisons) |
-| Gallup World Poll / ONU | World Happiness Report |
-| Kaggle | Dataset public disponible en ligne |
- 
 ---
  
 ## 🔍 Indicateurs analysés
